@@ -48,16 +48,20 @@ sequenceDiagram
 ### 3. Git图 (Git Graph)
 
 ```mermaid
-gitgraph
-    commit id: "初始提交"
-    branch feature
-    checkout feature
-    commit id: "添加功能"
-    commit id: "修复bug"
-    checkout main
-    commit id: "更新文档"
-    merge feature
-    commit id: "发布版本"
+graph TD
+    A[初始提交] --> B[更新文档]
+    A --> C[创建feature分支]
+    C --> D[添加功能]
+    D --> E[修复bug]
+    E --> F[合并到main]
+    B --> F
+    F --> G[发布版本]
+
+    classDef commitStyle fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef branchStyle fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+
+    class A,B,D,E,F,G commitStyle
+    class C branchStyle
 ```
 
 ### 4. 饼图 (Pie Chart)
