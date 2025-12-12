@@ -48,14 +48,16 @@ sequenceDiagram
 ### 3. Git图 (Git Graph)
 
 ```mermaid
-flowchart LR
-    A[初始提交] --> B[更新文档]
-    A --> C[创建feature分支]
-    C --> D[添加功能]
-    D --> E[修复bug]
-    E --> F[合并到main]
-    B --> F
-    F --> G[发布版本]
+gitgraph
+    commit id: "初始提交"
+    commit id: "更新文档"
+    branch feature
+    checkout feature
+    commit id: "添加功能"
+    commit id: "修复bug"
+    checkout main
+    merge feature
+    commit id: "发布版本"
 ```
 
 ### 4. 饼图 (Pie Chart)
