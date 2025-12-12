@@ -49,21 +49,13 @@ sequenceDiagram
 
 ```mermaid
 flowchart LR
-    A([初始提交]) --> B([更新文档])
-    A --> C{创建feature分支}
-    C --> D([添加功能])
-    D --> E([修复bug])
-    E --> F{合并到main}
+    A[初始提交] --> B[更新文档]
+    A --> C[创建feature分支]
+    C --> D[添加功能]
+    D --> E[修复bug]
+    E --> F[合并到main]
     B --> F
-    F --> G([发布版本])
-
-    style A fill:#e1f5fe
-    style B fill:#e1f5fe
-    style D fill:#e1f5fe
-    style E fill:#e1f5fe
-    style F fill:#fff3e0
-    style G fill:#e8f5e8
-    style C fill:#f3e5f5
+    F --> G[发布版本]
 ```
 
 ### 4. 饼图 (Pie Chart)
