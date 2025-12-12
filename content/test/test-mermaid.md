@@ -45,22 +45,7 @@ sequenceDiagram
     B->>U: 显示页面和图表
 ```
 
-### 3. Git图 (Git Graph)
-
-```mermaid
-gitgraph
-    commit id: "初始提交"
-    commit id: "更新文档"
-    branch feature
-    checkout feature
-    commit id: "添加功能"
-    commit id: "修复bug"
-    checkout main
-    merge feature
-    commit id: "发布版本"
-```
-
-### 4. 饼图 (Pie Chart)
+### 3. 饼图 (Pie Chart)
 
 ```mermaid
 pie title 数字花园内容分布
@@ -71,7 +56,7 @@ pie title 数字花园内容分布
     "测试文件" : 5
 ```
 
-### 5. 甘特图 (Gantt Chart)
+### 4. 甘特图 (Gantt Chart)
 
 ```mermaid
 gantt
@@ -88,7 +73,7 @@ gantt
     学习资源整理       :         resources, 2025-12-08, 2025-12-15
 ```
 
-### 6. 时间线 (Timeline)
+### 5. 时间线 (Timeline)
 
 ```mermaid
 timeline
@@ -107,7 +92,7 @@ timeline
                : 多种图表类型验证
 ```
 
-### 7. 类图 (Class Diagram)
+### 6. 类图 (Class Diagram)
 
 ```mermaid
 classDiagram
