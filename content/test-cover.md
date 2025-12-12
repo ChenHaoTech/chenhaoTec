@@ -1,7 +1,7 @@
 ---
 title: 测试头图功能
 permalink: cover-image-test
-cover: ./images/test-cover.svg
+cover: images/test-cover.svg
 tags: [测试, 头图, cover]
 created: 2025-12-12
 description: 这是一个测试cover头图功能的页面，验证图片是否正确显示
@@ -26,7 +26,7 @@ description: 这是一个测试cover头图功能的页面，验证图片是否�
 ## 📝 配置信息
 
 ```yaml
-cover: ./images/test-cover.svg
+cover: images/test-cover.svg
 ```
 
 ### 支持的图片格式
