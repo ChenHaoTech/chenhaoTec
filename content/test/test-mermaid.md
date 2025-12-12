@@ -48,20 +48,22 @@ sequenceDiagram
 ### 3. Git图 (Git Graph)
 
 ```mermaid
-graph TD
-    A[初始提交] --> B[更新文档]
-    A --> C[创建feature分支]
-    C --> D[添加功能]
-    D --> E[修复bug]
-    E --> F[合并到main]
+flowchart LR
+    A([初始提交]) --> B([更新文档])
+    A --> C{创建feature分支}
+    C --> D([添加功能])
+    D --> E([修复bug])
+    E --> F{合并到main}
     B --> F
-    F --> G[发布版本]
+    F --> G([发布版本])
 
-    classDef commitStyle fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-    classDef branchStyle fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-
-    class A,B,D,E,F,G commitStyle
-    class C branchStyle
+    style A fill:#e1f5fe
+    style B fill:#e1f5fe
+    style D fill:#e1f5fe
+    style E fill:#e1f5fe
+    style F fill:#fff3e0
+    style G fill:#e8f5e8
+    style C fill:#f3e5f5
 ```
 
 ### 4. 饼图 (Pie Chart)
